@@ -17,10 +17,10 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
-@WebFilter("/api/*")  // Define onde o filtro será aplicado
+@WebFilter("/api/*")  
 public class JwtAuthenticationFilter implements Filter {
 
-    private static final String SECRET_KEY = "seuSegredoJWT";  // Coloque sua chave secreta aqui
+    private static final String SECRET_KEY = "seuSegredoJWT";  
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
